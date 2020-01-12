@@ -1,5 +1,7 @@
 pluginManagement {
 	repositories {
+		// 这里需要替换成阿里云的仓库地址不然构建项目变得很慢
+		maven { url "http://maven.aliyun.com/nexus/content/groups/public" }
 		gradlePluginPortal()
 		maven { url 'https://repo.spring.io/plugins-release' }
 	}
