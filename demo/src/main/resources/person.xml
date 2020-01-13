@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="wangzhen" class="org.springframework.demo.xmlclassreload.beans.Person">
+		<property name="name" value="王震"/>
+		<property name="age" value="26"/>
+		<property name="sex" value="男"/>
+	</bean>
+
+	<bean id="wanguolan" class="org.springframework.demo.xmlclassreload.beans.Person">
+		<property name="name" value="汪国兰"/>
+		<property name="age" value="27"/>
+		<property name="sex" value="女"/>
+	</bean>
+</beans>
