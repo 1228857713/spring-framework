@@ -1,5 +1,10 @@
-package org.springframework.demo.xmlclassreload.beans;
+package org.springframework.demo.anntotation.bean;
 
+
+
+import org.springframework.stereotype.Component;
+
+@Component(value = "jiangshan")
 public class Person {
 	private String name;
 	private int age;
@@ -27,5 +32,14 @@ public class Person {
 
 	public void setSex(String sex) {
 		this.sex = sex;
+	}
+
+	@Override
+	public String toString() {
+		return "Person{" +
+				"name='" + name + '\'' +
+				", age=" + age +
+				", sex='" + sex + '\'' +
+				'}';
 	}
 }

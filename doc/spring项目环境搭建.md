@@ -10,3 +10,5 @@
 maven { url "http://maven.aliyun.com/nexus/content/groups/public" }
 
 ```
+
+- 3.idea 的版本最好也是19版本的，或者最新版本的，反正我之前使用18版本的直接报错了
