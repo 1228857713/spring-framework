@@ -22,18 +22,23 @@ public class StartApplication
 
 
 		//获取单个对象
-		Person wangzhen = (Person)applicationContext.getBean("wangzhen");
-		System.out.printf(wangzhen.toString());
+//		Person wangzhen = (Person)applicationContext.getBean("wangzhen");
+//		System.out.printf(wangzhen.toString());
+//
+//
+//		// 根据 类 来获取对象
+//		String []names =applicationContext.getBeanNamesForType(Person.class);
+//		for (String name : names){
+//			Person person = (Person)applicationContext.getBean(name);
+//			System.out.printf(person.toString());
+//		}
+//
+//		Map<String,Object> map =applicationContext.getBeansOfType(Object.class);
+//		System.out.printf(map.toString());
+		Person jiangshan1 = (Person)applicationContext.getBean("jiangshan");
+		Person jiangshan2 = (Person)applicationContext.getBean("jiangshan");
+		System.out.println(jiangshan1.hashCode()+"======"+jiangshan2.hashCode());
 
 
-		// 根据 类 来获取对象
-		String []names =applicationContext.getBeanNamesForType(Person.class);
-		for (String name : names){
-			Person person = (Person)applicationContext.getBean(name);
-			System.out.printf(person.toString());
-		}
-
-		Map<String,Object> map =applicationContext.getBeansOfType(Object.class);
-		System.out.printf(map.toString());
 	}
 }

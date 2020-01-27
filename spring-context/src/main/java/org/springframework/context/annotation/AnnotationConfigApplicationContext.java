@@ -64,8 +64,12 @@ public class AnnotationConfigApplicationContext extends GenericApplicationContex
 	 */
 	public AnnotationConfigApplicationContext() {
 		// 默认调用父类的构造方法 初始化 一个 beanFactory
-		 super();
+		super();
+		// 1.初始化一个 BeanDefinitionReader 用于将所有的 bean 转换为 beandefinition
+		// 2.然后 put 到 beandefinitionMap 中放到 beanfatory 中去
+		// 3.这个对象只能读取加了 注解的类
 		this.reader = new AnnotatedBeanDefinitionReader(this);
+		//1.实例化一个ClassPathBeanDefinitionScanner ，能够扫描我们的类和包并且 装换为 BeanDefine
 		this.scanner = new ClassPathBeanDefinitionScanner(this);
 	}
 

@@ -93,6 +93,7 @@ final class MergedAnnotationsCollection implements MergedAnnotations {
 	}
 
 	private boolean isPresent(Object requiredType, boolean directOnly) {
+		// 重点
 		for (MergedAnnotation<?> annotation : this.annotations) {
 			Class<? extends Annotation> type = annotation.getType();
 			if (type == requiredType || type.getName().equals(requiredType)) {
