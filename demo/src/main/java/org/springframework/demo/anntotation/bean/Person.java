@@ -3,12 +3,14 @@ package org.springframework.demo.anntotation.bean;
 
 
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
 
-@Component(value = "jiangshan")
+@Controller(value = "jiangshan")
 public class Person {
 	private String name;
 	private int age;
 	private String sex;
+
 
 	public String getName() {
 		return name;

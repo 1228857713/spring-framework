@@ -430,7 +430,7 @@ public class ClassPathScanningCandidateComponentProvider implements EnvironmentC
 				if (resource.isReadable()) {
 					try {
 						MetadataReader metadataReader = getMetadataReaderFactory().getMetadataReader(resource);
-						// 是否满足条件 重点
+						//重要： 是否满足条件，这里主要的内容是扫描是否 有 component 注解 ，有就代表瞒住条件，否则就不满足条件
 						if (isCandidateComponent(metadataReader)) {
 							ScannedGenericBeanDefinition sbd = new ScannedGenericBeanDefinition(metadataReader);
 							sbd.setResource(resource);

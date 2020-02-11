@@ -19,7 +19,7 @@ public class StartApplication
 
 		 */
 		AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(SpringConfig.class);
-
+		applicationContext.scan("org.springframework.demo.anntotation.bean");
 
 		//获取单个对象
 //		Person wangzhen = (Person)applicationContext.getBean("wangzhen");
