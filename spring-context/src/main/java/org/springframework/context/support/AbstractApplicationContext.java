@@ -665,6 +665,7 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 	 */
 	protected ConfigurableListableBeanFactory obtainFreshBeanFactory() {
 		// 关闭旧的 BeanFactory (如果有)，创建新的 BeanFactory，加载 Bean 定义、注册 Bean 等等
+		// 这个地方有两个实现，注解版本的话是一个空实现，BeanFactory早已经定义好了
 		refreshBeanFactory();
 		return getBeanFactory();
 	}

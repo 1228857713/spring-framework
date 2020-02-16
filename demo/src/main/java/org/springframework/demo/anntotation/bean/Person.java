@@ -2,10 +2,12 @@ package org.springframework.demo.anntotation.bean;
 
 
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 
-@Controller(value = "jiangshan")
+@Component(value = "jiangshan")
+@Scope("singleton")
 public class Person {
 	private String name;
 	private int age;
