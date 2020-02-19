@@ -1,4 +1,4 @@
-package org.springframework.demo.anntotation.bean;
+package org.springframework.demo.core.anntotation.bean;
 
 import org.springframework.stereotype.Component;
 

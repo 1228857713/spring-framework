@@ -1,11 +1,8 @@
-package org.springframework.demo.anntotation;
+package org.springframework.demo.core.anntotation;
 
 
-import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.demo.anntotation.bean.Person;
-
-import java.util.Map;
+import org.springframework.demo.core.anntotation.bean.Person;
 
 
 // 使用注解的方式启动spring
@@ -19,7 +16,7 @@ public class StartApplication
 
 		 */
 		AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(SpringConfig.class);
-		applicationContext.scan("org.springframework.demo.anntotation.bean");
+		applicationContext.scan("org.springframework.demo.core.anntotation.bean");
 
 		//获取单个对象
 //		Person wangzhen = (Person)applicationContext.getBean("wangzhen");

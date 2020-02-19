@@ -1,7 +1,7 @@
-package org.springframework.demo.anntotation;
+package org.springframework.demo.core.anntotation;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.demo.anntotation.bean.PointService;
+import org.springframework.demo.core.anntotation.bean.PointService;
 
 public class TestAutowire {
 	public static void main(String[] args) {
