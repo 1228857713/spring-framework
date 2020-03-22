@@ -40,4 +40,5 @@ rootProject.children.each {project ->
 }
 include 'demo'
 include 'basicjava'
+include 'spring-mvc-demo'
 

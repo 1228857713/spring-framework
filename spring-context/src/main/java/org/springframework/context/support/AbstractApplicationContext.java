@@ -525,10 +525,8 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 			// 设置 BeanFactory 的类加载器，添加几个 BeanPostProcessor，手动注册几个特殊的 bean
 			prepareBeanFactory(beanFactory);
 			try {
-				// 【这里需要知道 BeanFactoryPostProcessor 这个知识点，Bean 如果实现了此接口，
-				// 那么在容器初始化以后，Spring 会负责调用里面的 postProcessBeanFactory 方法。】
-				// 这里是提供给子类的扩展点，到这里的时候，所有的 Bean 都加载、注册完成了，但是都还没有初始化
-				// 具体的子类可以在这步的时候添加一些特殊的 BeanFactoryPostProcessor 的实现类或做点什么事
+
+				// 空实现
 				postProcessBeanFactory(beanFactory);
 				// 调用 beanFactory 的后置处理器。
 				// 包扫描，并将类加入注册到工厂里面就是在这个方法里面进行的

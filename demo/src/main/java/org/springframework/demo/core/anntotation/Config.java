@@ -8,7 +8,7 @@ import org.springframework.demo.core.anntotation.bean.Person;
 
 
 // 表示这是一个配置文件
-@Configurable
+//@Configurable
 // 扫描这个文件夹下面的所有类
 @ComponentScan("org.springframework.demo.core.anntotation")
 public class Config {

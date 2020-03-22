@@ -7,6 +7,6 @@ public class App {
 	public static void main(String[] args) {
 		AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(Config.class);
 		Person person = (Person) applicationContext.getBean("person");
-		person.toString();
+		System.out.println(person.toString());
 	}
 }
