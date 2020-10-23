@@ -17,4 +17,5 @@ dependencies {
     compile(project(":spring-beans"))
     compile(project(":spring-core"))
     compile(project(":spring-context"))
+    compile(project(":spring-aop"))
 }
