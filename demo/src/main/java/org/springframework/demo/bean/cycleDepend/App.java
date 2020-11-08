@@ -10,7 +10,6 @@ public class App {
 	public static void main(String[] args) {
 		AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(Config.class);
 		TestA testA = (TestA) applicationContext.getBean("testA");
-		//BeanCurrentlyInCreationException
 		System.out.println(testA.toString());
 	}
 }

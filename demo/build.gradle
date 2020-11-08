@@ -18,4 +18,5 @@ dependencies {
     compile(project(":spring-core"))
     compile(project(":spring-context"))
     compile(project(":spring-aop"))
+    testCompile("org.aspectj:aspectjweaver")
 }
